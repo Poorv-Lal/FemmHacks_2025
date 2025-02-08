@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.image("https://ibb.co/XfLNkjvw")
-st.title("Clothing")
-st.write("boo!")
+st.title("What's Your Style?")
+st.write("Take this quiz to know what fashion sustainability practice suits you!")
+st.write("hello?")

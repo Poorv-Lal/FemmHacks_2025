@@ -2,15 +2,11 @@ import streamlit as st
 
 st.title("Recycling")
 
-st.write("Want to know if you can recycle something?")
 with st.container(border=True):
-    st.button("Recycle?", type="primary", use_container_width=True)
-    if st.button("Say hello"):
-        st.write("Why hello there")
+    st.header("Want to know if you can recycle something?")
+    st.page_link("pages/page_3.py", label="Recycle?", use_container_width=True)
 
 st.divider()
-st.write("Take a Recyling Quiz to Test Your Knowledge?")
 with st.container(border=True):
-    st.button("Start Quiz", type="primary", use_container_width=True)
-    if st.button("Say hello"):
-        st.write("Why hello there")
+    st.header("Take a Quiz to Test your Recycle Knowledge?")
+    st.page_link("pages/page_3.py", label="Start Quiz", use_container_width=True)

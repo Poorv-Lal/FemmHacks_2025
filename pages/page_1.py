@@ -53,4 +53,4 @@ st.divider()
 with st.container(border=True):
     st.header("What can you do?")
     st.write("While we all somewhat know how to recycle, and we should buy second-hand clothes, and maybe even compost, it is very confusing to know where to start and how to effectively help out. Our website is intended to guide you through ways you can help the Earth in your day-to-day life too. We recommend starting out with the recycling page and going from there.")
-    st.page_link("pages/page_6.py", label="Take Action")
+    st.page_link("pages/page_6.py", label="TAKE ACTION", icon="📢")

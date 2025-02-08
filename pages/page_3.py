@@ -2,62 +2,74 @@ import streamlit as st
 from statistics import mode
 
 progress = 0
-answers = []
+answers =[]
+Question_1_Answered = False
+Question_2_Answered = False
+Question_3_Answered = False
+Question_4_Answered = False
+Question_5_Answered = False
+Results = False
 
-def updateProgress(progress):
+#st.image("FemmHacks_2025/Images/clothing_header.jpg")
+st.title("What's Your Style?")
+st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
+Question_1_Answered = st.button("Start Quiz")
+
+#def updateProgress(progress):
     # this is where the code for the progress bar goes
-    progress = progress + 1
+#    progress = progress + 1
 
-def questionOne():
-    updateProgress()
+if Question_1_Answered == True:
+    progress = progress +1
     options = ["I wish I could customize this to fully express my style", 
                 "I wish more people got the clothes they wanted",
                 "I wonder what material this clothing is made of",
                 "It'd be nice to pass this garment on to my grandchildren"]
-    choice = st.radio("What’s the first thing you think of after buying new clothes?", options, on_change=questionTwo())
+    choice = st.radio("What’s the first thing you think of after buying new clothes?", options, on_change=Question_2_Answered)
     answers.append(choice)
 
-def questionTwo():
-    updateProgress()
+
+if Question_2_Answered == True:
+    progress = progress +1
     progress = progress + 1
     options = ["Adding designs to customize my outfit", 
                 "Picking up trash at the local beach",
                 "Volunteering at a shelter for vulnerable people",
                 "Finding valuable items for a collection"]
-    choice = st.radio("How would you like to spend a Saturday afternoon?", options, on_change=questionThree())
+    choice = st.radio("How would you like to spend a Saturday afternoon?", options, on_change=Question_3_Answered)
     answers.append(choice)
 
-def questionThree():
-    updateProgress()
+if Question_3_Answered == True:
+    progress = progress +1
     progress = progress + 1
     options = ["Vintage Style", 
                 "Practicality",
                 "Comfort",
                 "Durability"]
-    choice = st.radio("What’s the most attractive quality an outfit can have?", options, on_change=questionFour())
+    choice = st.radio("What’s the most attractive quality an outfit can have?", options, Question_4_Answered)
     answers.append(choice)
 
-def questionFour():
-    progress = progress + 1
+if Question_4_Answered == True:
+    progress = progress +1
     options = ["When someone is afraid to express themselves", 
                 "When someone is afraid to express themselves",
                 "When someone wastes their food",
                 "When someone doesn’t plan for the long run"]
-    choice = st.radio("What’s the first thing you think of after buying new clothes?", options, on_change=questionFour())
+    choice = st.radio("What’s the first thing you think of after buying new clothes?", options, on_change=Question_5_Answered)
     answers.append(choice)
 
-def questionFive():
-    updateProgress()
+if Question_5_Answered == True:
+    progress = progress +1
     progress = progress + 1
     options = ["It’s no longer my style", 
                 "I’m giving it to a loved one",
                 "I think it’s starting to look old",
                 "It’s too damaged to maintain or repair"]
-    choice = st.radio("Why would you want to get rid of a piece of clothing?", options, on_change=quizResults())
+    choice = st.radio("Why would you want to get rid of a piece of clothing?", options, on_change=Results)
     answers.append(choice)
 
-def quizResults():
-    updateProgress()
+if Results == True:
+    uprogress = progress +1
     result = mode(answers)
     #thin image banner goes here eventually
     st.subheader("You are a...")
@@ -81,7 +93,7 @@ def quizResults():
         st.page_link("pages/page_3.py", label="Retry")
 
 #st.image("FemmHacks_2025/Images/clothing_header.jpg")
-st.title("What's Your Style?")
-st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
-st.button("Start Quiz", on_click=questionOne())
+#st.title("What's Your Style?")
+#st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
+#st.button("Start Quiz", on_click=questionOne())
 

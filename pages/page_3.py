@@ -28,7 +28,9 @@ if Question_1_Answered == True:
                 "It'd be nice to pass this garment on to my grandchildren"]
     choice = st.radio("What’s the first thing you think of after buying new clothes?", options)
     answers.append(choice)
-    Question_2_Answered = st.button("Next Question")
+    if (choice!="-1"):
+        Question_2_Answered = True
+    
 
 
 if Question_2_Answered == True:
@@ -40,7 +42,9 @@ if Question_2_Answered == True:
                 "Finding valuable items for a collection"]
     choice = st.radio("How would you like to spend a Saturday afternoon?", options)
     answers.append(choice)
-    Question_3_Answered = st.button("Next Question")
+    answers.append(choice)
+    if (choice!="-1"):
+        Question_3_Answered = True
 
 if Question_3_Answered == True:
     choice = "-1"
@@ -51,7 +55,8 @@ if Question_3_Answered == True:
                 "Durability"]
     choice = st.radio("What’s the most attractive quality an outfit can have?", options)
     answers.append(choice)
-    Question_4_Answered = st.button("Next Question")
+    if (choice!="-1"):
+        Question_4_Answered = True
 
 if Question_4_Answered == True:
     choice = "-1"
@@ -62,7 +67,8 @@ if Question_4_Answered == True:
                 "When someone doesn’t plan for the long run"]
     choice = st.radio("What’s the first thing you think of after buying new clothes?", options)
     answers.append(choice)
-    Question_5_Answered = st.button("Next Question")
+    if (choice!="-1"):
+        Question_5_Answered = True
 
 if Question_5_Answered == True:
     choice = "-1"
@@ -73,7 +79,8 @@ if Question_5_Answered == True:
                 "It’s too damaged to maintain or repair"]
     choice = st.radio("Why would you want to get rid of a piece of clothing?", options)
     answers.append(choice)
-    Results = st.button("Get Results")
+    if (choice!="-1"):
+        Results = True
 
 if Results == True:
     uprogress = progress +1

@@ -9,7 +9,7 @@ def updateProgress():
     pass
 
 def questionOne():
-    progress += 1
+    progress = progress + 1
     options = ["I wish I could customize this to fully express my style", 
                 "I wish more people got the clothes they wanted",
                 "I wonder what material this clothing is made of",
@@ -18,7 +18,7 @@ def questionOne():
     answers.append(choice)
 
 def questionTwo():
-    progress += 1
+    progress = progress + 1
     options = ["Adding designs to customize my outfit", 
                 "Picking up trash at the local beach",
                 "Volunteering at a shelter for vulnerable people",
@@ -27,7 +27,7 @@ def questionTwo():
     answers.append(choice)
 
 def questionThree():
-    progress += 1
+    progress = progress + 1
     options = ["Vintage Style", 
                 "Practicality",
                 "Comfort",
@@ -36,7 +36,7 @@ def questionThree():
     answers.append(choice)
 
 def questionFour():
-    progress += 1
+    progress = progress + 1
     options = ["When someone is afraid to express themselves", 
                 "When someone is afraid to express themselves",
                 "When someone wastes their food",
@@ -45,7 +45,7 @@ def questionFour():
     answers.append(choice)
 
 def questionFive():
-    progress += 1
+    progress = progress + 1
     options = ["It’s no longer my style", 
                 "I’m giving it to a loved one",
                 "I think it’s starting to look old",
@@ -56,7 +56,7 @@ def questionFive():
 def quizResults():
     result = mode(answers)
     #thin image banner goes here eventually
-    st.header("You are a...")
+    st.subheader("You are a...")
     if result == 0:
         st.title("Vintage Thrifter")
         st.write("You love to ")
@@ -78,6 +78,6 @@ def quizResults():
 
 #st.image("FemmHacks_2025/Images/clothing_header.jpg")
 st.title("What's Your Style?")
-st.header("Take this quiz to know what fashion sustainability practice suits you!")
-st.button("Start Quiz",on_click=questionOne())
+st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
+st.button("Start Quiz", on_click=questionOne())
 

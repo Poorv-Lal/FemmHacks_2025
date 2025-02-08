@@ -9,7 +9,7 @@ Question_3_Answered = False
 Question_4_Answered = False
 Question_5_Answered = False
 
-#Results = False
+Results = False
 
 #st.image("FemmHacks_2025/Images/clothing_header.jpg")
 st.title("What's Your Style?")

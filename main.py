@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-pg = st.navigation([st.Page("pages\page_1.py",title="Homepage"),
+pg = st.navigation([st.Page("pages/page_1.py",title="Homepage"),
                      st.Page("page_2.py",title="Recycling"),
                      st.Page("page_3.py",title="Clothing"),
                      st.Page("page_4.py",title="Composting"),

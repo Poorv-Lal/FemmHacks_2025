@@ -42,7 +42,7 @@ if Question_2_Answered == True:
                 "Finding valuable items for a collection"]
     choice = st.radio("How would you like to spend a Saturday afternoon?", options)
     answers.append(choice)
-    answers.append(choice)
+    
     if (choice!="-1"):
         Question_3_Answered = True
 
@@ -81,7 +81,7 @@ if Question_5_Answered == True:
     answers.append(choice)
     
 
-if Results == True:
+if answers.__len__ == 5:
     uprogress = progress +1
     result = mode(answers)
     #thin image banner goes here eventually

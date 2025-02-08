@@ -1,6 +1,7 @@
 import streamlit as st
 from statistics import mode
 
+'''
 progress = 0
 answers =[]
 Question_1_Answered = False
@@ -104,3 +105,46 @@ if Results == True:
 #st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
 #st.button("Start Quiz", on_click=questionOne())
 
+'''
+
+# Define quiz questions and answers
+quiz_data = [
+    {"question": "What is the capital of France?", "options": ["Paris", "London", "Berlin", "Madrid"], "answer": "Paris"},
+    {"question": "Which planet is known as the Red Planet?", "options": ["Venus", "Mars", "Jupiter", "Saturn"], "answer": "Mars"},
+    {"question": "What is 5 + 7?", "options": ["10", "11", "12", "13"], "answer": "12"},
+]
+
+# Initialize session state variables
+if "question_index" not in st.session_state:
+    st.session_state.question_index = 0
+if "score" not in st.session_state:
+    st.session_state.score = 0
+if "answered" not in st.session_state:
+    st.session_state.answered = False
+
+# Get current question
+current_question = quiz_data[st.session_state.question_index]
+
+st.write(f"### Question {st.session_state.question_index + 1}: {current_question['question']}")
+
+# Display options as buttons
+for option in current_question["options"]:
+    if st.button(option, key=option):
+        if not st.session_state.answered:  # Prevent multiple submissions
+            st.session_state.answered = True
+            if option == current_question["answer"]:
+                st.success("Correct! 🎉")
+                st.session_state.score += 1
+            else:
+                st.error(f"Wrong! The correct answer is {current_question['answer']}.")
+
+# Show "Next Question" button if answered
+if st.session_state.answered:
+    if st.button("Next Question"):
+        st.session_state.question_index += 1
+        st.session_state.answered = False  # Reset answer state
+        if st.session_state.question_index >= len(quiz_data):  # Check if quiz is over
+            st.write(f"### Quiz Complete! Your score: {st.session_state.score}/{len(quiz_data)}")
+            st.session_state.question_index = 0  # Reset for restart
+            st.session_state.score = 0
+        st.rerun()

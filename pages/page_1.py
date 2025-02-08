@@ -6,20 +6,20 @@ st.divider()
 col1,col2,col3,col4,col5 = st.columns(5)
 
 with col1:
-    st.page_link("pages/page_2.py", label="Recycling", icon="🏠")
+    st.page_link("pages/page_2.py", label="Recycling", icon="♻️")
 
 with col2:
-     st.page_link("pages/page_3.py", label="Clothing", icon="🏠")
+     st.page_link("pages/page_3.py", label="Clothing", icon="👚")
 
 
 with col3:
-     st.page_link("pages/page_4.py", label="Composting", icon="🏠")
+     st.page_link("pages/page_4.py", label="Composting", icon="🌱")
     
 with col4:
-     st.page_link("pages/page_5.py", label="Microplastics Avoiding", icon="🏠")
+     st.page_link("pages/page_5.py", label="Microplastics", icon="⚗️")
 
 with col5:
-     st.page_link("pages/page_6.py", label="Call to Action", icon="🏠")
+     st.page_link("pages/page_6.py", label="Call to Action", icon="📢")
 
 
 

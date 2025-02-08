@@ -33,29 +33,29 @@ quiz_data = [
     {
         "question": "What’s a personal ick that you have?",
         "options": {
-            "🎭 Drama": "Curious",
-            "😂 Comedy": "Thrifting",
-            "🎬 Action": "Adventurous",
-            "🎀 Romance": "Cozy"
+            "When someone wastes their food": "Recycling",
+            "When someone is afraid to express themselves": "Thrifting",
+            "When someone doesn’t plan for the long run": "Slow fashion",
+            "When someone never shares with others": "Donating"
         }
     },
     {
-        "question": "How do you spend a Sunday?",
+        "question": "Why would you want to get rid of a piece of clothing?",
         "options": {
-            "🌲 Hiking or outdoor adventures": "Adventurous",
-            "📖 Reading a book": "Curious",
-            "🍿 Watching Netflix": "Cozy",
-            "🧘‍♂️ Relaxing with music": "Relaxed"
+            "It’s too damaged to maintain or repair": "Slow fashion",
+            "I think it’s starting to look old": "Recycling",
+            "I’m giving it to a loved one": "Donating",
+            "It’s no longer my style": "Thrifting"
         }
     }
 ]
 
 # Personality categories and results
 results = {
-    "Relaxed": "🌴 You have a **chill and laid-back** personality! You enjoy life at your own pace.",
-    "Adventurous": "⛰️ You’re a **thrill-seeker**! You love new experiences and taking risks.",
-    "Curious": "🔍 You have a **curious mind**! You're always exploring and learning new things.",
-    "Cozy": "☕ You love **comfort**! Whether it’s books, warm blankets, or cozy nights in."
+    "Thrifting": "Thrifting Answer",
+    "Donating": "Donating Answer",
+    "Recycling": "Recycling Answer",
+    "Slow fashion": "Slow fashion Answer"
 }
 
 # Initialize session state

@@ -9,7 +9,7 @@ message = ""
 st.header("Want to know if you can recycle something?")
 option = st.selectbox(
     "What kind of Material do you have?",
-    ("Carton", "Paper", "Cardboard","Food Scraps", "Glass","Plastic","Metal","Styrofoam", "Other/Unsure"),
+    ("Batteries/Electronics", "Carton", "Paper", "Cardboard","Food Scraps", "Glass","Plastic","Metal", "Styrofoam","Other/Unsure"),
     )
 
 if option == "Paper":
@@ -112,11 +112,11 @@ elif option == "Metal":
         
     
 
-elif option == "Batteries/Electrnics":
+elif option == "Batteries/Electronics":
     can_recycle = 0
     message = "because it is not normally recyclable, but local recycling plants near you may be able to handle or repurpose them"
 
-elif option == "Carton (Milk carton, etc.)":
+elif option == "Carton":
     option2 = st.selectbox(
     "Is the " + option +" ______?",
     ("Clean & Dry","Wet", "Dirty"),
@@ -128,7 +128,7 @@ elif option == "Carton (Milk carton, etc.)":
         can_recycle = -1
         message = "Dry it and you are good to go"
     elif option2 == "Shredded/In-small Pieces":
-        can_recycle = 0
+        can_recycle = 1
         message = "because it is not normally recyclable, but local recycling plants near you may be able to handle or repurpose them"
 
 

@@ -6,38 +6,56 @@ quiz_data = [
     {
         "question": "What's your ideal vacation?",
         "options": {
-            "Beach paradise 🏖️": "Relaxed",
-            "Mountain adventure 🏔️": "Adventurous",
-            "City exploration 🏙️": "Curious",
-            "Staycation at home 🏡": "Cozy"
+            "🏖️ Beach paradise": "Relaxed",
+            "🏔️ Mountain adventure": "Adventurous",
+            "🏙️ City exploration": "Curious",
+            "🏡 Staycation at home": "Cozy"
         }
     },
     {
-        "question": "What's your favorite food?",
+        "question": "What's your go-to drink?",
         "options": {
-            "Pizza 🍕": "Cozy",
-            "Sushi 🍣": "Curious",
-            "Steak 🥩": "Adventurous",
-            "Smoothie bowl 🍓": "Relaxed"
+            "☕ Coffee": "Cozy",
+            "🍹 Smoothie": "Relaxed",
+            "🥤 Soda": "Adventurous",
+            "🍵 Green tea": "Curious"
         }
     },
     {
-        "question": "Pick a weekend activity!",
+        "question": "Pick a pet!",
         "options": {
-            "Hiking in nature 🌲": "Adventurous",
-            "Reading a book 📖": "Cozy",
-            "Exploring new places ✈️": "Curious",
-            "Spa day 💆": "Relaxed"
+            "🐶 Dog": "Adventurous",
+            "🐱 Cat": "Cozy",
+            "🦜 Parrot": "Curious",
+            "🐢 Turtle": "Relaxed"
+        }
+    },
+    {
+        "question": "What's your favorite type of movie?",
+        "options": {
+            "🎭 Drama": "Curious",
+            "😂 Comedy": "Relaxed",
+            "🎬 Action": "Adventurous",
+            "🎀 Romance": "Cozy"
+        }
+    },
+    {
+        "question": "How do you spend a Sunday?",
+        "options": {
+            "🌲 Hiking or outdoor adventures": "Adventurous",
+            "📖 Reading a book": "Curious",
+            "🍿 Watching Netflix": "Cozy",
+            "🧘‍♂️ Relaxing with music": "Relaxed"
         }
     }
 ]
 
-# Personality categories
+# Personality categories and results
 results = {
-    "Relaxed": "🌴 You have a chill and laid-back personality! You enjoy life at your own pace.",
-    "Adventurous": "⛰️ You’re a thrill-seeker! You love new experiences and taking risks.",
-    "Curious": "🔍 You have a curious mind! You're always exploring and learning new things.",
-    "Cozy": "☕ You love comfort! Whether it’s books, warm blankets, or cozy nights in."
+    "Relaxed": "🌴 You have a **chill and laid-back** personality! You enjoy life at your own pace.",
+    "Adventurous": "⛰️ You’re a **thrill-seeker**! You love new experiences and taking risks.",
+    "Curious": "🔍 You have a **curious mind**! You're always exploring and learning new things.",
+    "Cozy": "☕ You love **comfort**! Whether it’s books, warm blankets, or cozy nights in."
 }
 
 # Initialize session state

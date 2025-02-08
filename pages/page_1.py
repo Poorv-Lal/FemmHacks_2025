@@ -45,7 +45,12 @@ with st.container(border=True):
 
 
 st.divider()
-st.header("Why does taking care of the environment matters?")
+with st.container(border=True):
+    st.header("Why does taking care of the environment matters?")
+    st.write("Taking care of the environment is crucial for our planet and future generations’s well-being. The natural world provides essential resources such as clean air, water, and food, which sustain life on Earth. By preserving ecosystems, we help ensure biodiversity and maintain the balance necessary for all living organisms (including us humans!) to thrive. In short, living in a healthy world makes it easier to live a healthy life.")
 
 st.divider()
-st.header("What can you do?")
+with st.container(border=True):
+    st.header("What can you do?")
+    st.write("While we all somewhat know how to recycle, and we should buy second-hand clothes, and maybe even compost, it is very confusing to know where to start and how to effectively help out. Our website is intended to guide you through ways you can help the Earth in your day-to-day life too. We recommend starting out with the recycling page and going from there.")
+    st.page_link("pages/page_6.py", label="Take Action")

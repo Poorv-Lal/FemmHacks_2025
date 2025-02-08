@@ -26,19 +26,20 @@ with col5:
 
 
 st.divider()
-st.header("Our mission - SPROUT")
-st.subheader("Sustainability")
-st.write("Taking care of the earth in small ways where you can while meeting our individual and communal needs")
-st.subheader("Preservation")
-st.write("Not disturbing already existing green areas")
-st.subheader("Reducing,Reusing,&Recyling")
-st.write("Reducing our purchases where possible, Reusing them for years to come, and recycling properly")
-st.subheader("Outcomes")
-st.write("Not sweating the small stuff and focusing on the overall outcome of helping the planet where you can")
-st.subheader("Understanding ")
-st.write("Knowing where we can individually help out on smaller scales vs. taking collective action")
-st.subheader("Transitioning ")
-st.write("Taking the small steps gradual steps to change make green habits")
+with st.container():
+    st.header("Our mission - SPROUT")
+    st.subheader("Sustainability")
+    st.write("Taking care of the earth in small ways where you can while meeting our individual and communal needs")
+    st.subheader("Preservation")
+    st.write("Not disturbing already existing green areas")
+    st.subheader("Reducing,Reusing,&Recyling")
+    st.write("Reducing our purchases where possible, Reusing them for years to come, and recycling properly")
+    st.subheader("Outcomes")
+    st.write("Not sweating the small stuff and focusing on the overall outcome of helping the planet where you can")
+    st.subheader("Understanding ")
+    st.write("Knowing where we can individually help out on smaller scales vs. taking collective action")
+    st.subheader("Transitioning ")
+    st.write("Taking the small steps gradual steps to change make green habits")
 
 
 st.divider()

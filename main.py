@@ -8,7 +8,7 @@ import streamlit as st
 if __name__ == "__main__":
     # Sidebar navigation
     st.sidebar.title("Navigation")
-    page = st.sidebar.selectbox("Go to", ["Home", "Page 1", "Page 2"])
+    page = st.navigation("Go to", ["Home", "Page 1", "Page 2"])
 
     # Home page content
     if page == "Home":

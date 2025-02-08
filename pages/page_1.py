@@ -6,8 +6,7 @@ st.divider()
 col1,col2,col3,col4,col5 = st.columns(5)
 
 with col1:
-    if st.button("Recycling") :
-        st.switch_page("page\page2.py")
+    st.page_link("your_app.py", label="Home", icon="🏠")
 
 with col2:
     st.button("Clothing")

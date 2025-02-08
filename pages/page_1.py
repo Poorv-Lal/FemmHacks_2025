@@ -3,12 +3,10 @@ import streamlit as st
 # Custom CSS for container styles
 st.markdown("""
     <style>
-        .streamlit-expanderHeader {
-            background-color: #90ee90;  /* Light green background for the container */
-            padding: 10px;
-        }
-        .css-1v0mbdj {
-            background-color: #90ee90;  /* Apply the green background color to the container */
+        .custom-container {
+            background-color: #90ee90;  /* Light green color */
+            padding: 20px;
+            border-radius: 10px;
         }
     </style>
 """, unsafe_allow_html=True)
@@ -41,7 +39,7 @@ with col5:
 
 st.divider()
 with st.container():
-    st.markdown('<div class="container-green">', unsafe_allow_html=True)
+    st.markdown('<div class="custom-container">', unsafe_allow_html=True)
     st.write("This is a green container.")
     st.markdown('</div>', unsafe_allow_html=True)
 

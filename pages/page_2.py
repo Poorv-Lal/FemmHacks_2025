@@ -2,9 +2,12 @@ import streamlit as st
 
 st.title("Recycling")
 
-optionMaterial = st.selectbox(
-    "What material are you tring to recycle?",
-    ("Paper", "Carboard", "Glass", "Plastic","Metal","Batteries/Electronics", "Mixed Material", "Stryofoam", "Other", "Unsure"),
-)
+st.write("Want to know if you can recycle something?")
+st.button("Recycle?", type="primary")
+if st.button("Say hello"):
+    st.write("Why hello there")
+else:
+    st.write("Goodbye")
 
-st.write("You selected:", optionMaterial)
+if st.button("Aloha", type="tertiary"):
+    st.write("Ciao")

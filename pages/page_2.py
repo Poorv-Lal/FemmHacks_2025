@@ -9,7 +9,7 @@ message = ""
 st.header("Want to know if you can recycle something?")
 option = st.selectbox(
     "What kind of Material do you have?",
-    ("Batteries/Electronics", "Carton", "Paper", "Cardboard","Food Scraps", "Glass","Plastic","Metal", "Styrofoam","Other/Unsure"),
+    ("Batteries/Electronics", "Cardboard","Carton", "Paper","Food Scraps", "Glass","Plastic","Metal", "Styrofoam","Other/Unsure"),
     )
 
 if option == "Paper":
@@ -76,7 +76,6 @@ elif option == "Plastic":
         message = "because Philadelphia County does not what the capability to recycle this type of plastic"
     elif option2 == "5":
         can_recycle = 1
-        message = "because it gets stuck in recycling plants"
     elif option2 == "6":
         can_recycle = 0
         message = "because Philadelphia County does not what the capability to recycle this type of plastic"
@@ -126,7 +125,7 @@ elif option == "Carton":
     elif option2 == "Wet":
         can_recycle = -1
         message = "Dry it and you are good to go"
-    elif option2 == "Diry":
+    elif option2 == "Dirty":
         can_recycle = 1
         message = "Clean it and you are good to go"
 

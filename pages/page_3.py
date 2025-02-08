@@ -1,7 +1,10 @@
 import streamlit as st
 from statistics import mode
 
-def updateProgress():
+progress = 0
+answers = []
+
+def updateProgress(progress):
     # this is where the code for the progress bar goes
     progress = progress + 1
 
@@ -77,11 +80,8 @@ def quizResults():
     with col2:
         st.page_link("pages/page_3.py", label="Retry")
 
-if __name__ == "__main__":
-    progress = 0
-    answers = []
-    #st.image("FemmHacks_2025/Images/clothing_header.jpg")
-    st.title("What's Your Style?")
-    st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
-    st.button("Start Quiz", on_click=questionOne())
+#st.image("FemmHacks_2025/Images/clothing_header.jpg")
+st.title("What's Your Style?")
+st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
+st.button("Start Quiz", on_click=questionOne())
 

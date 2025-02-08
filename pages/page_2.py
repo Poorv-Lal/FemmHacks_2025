@@ -31,7 +31,7 @@ if option == "Paper":
 elif option == "Cardboard":
     option2 = st.selectbox(
     "Is the " + option +" ______?",
-    ("Clean & Dry","Dirty", "Shredded/In-small Pieces"),
+    ("Clean & Dry","Dirty or Has food on it", "Shredded/In-small Pieces"),
     )
 
     if option2 == "Clean & Dry":
@@ -46,7 +46,7 @@ elif option == "Cardboard":
 elif option == "Glass":
     option2 = st.selectbox(
     "Is the " + option +" ______?",
-    ("Clean & Dry","Wet", "Drity"),
+    ("Clean & Dry","Wet", "Dirty"),
     )
 
     if option2 == "Clean & Dry":
@@ -58,7 +58,7 @@ elif option == "Glass":
         can_recycle = -1
         message = "because it gets stuck in recycling plants" 
 
-elif option == "Plasitc":
+elif option == "Plastic":
     option2 = st.selectbox(
     "What Number is Located On inside the Recycle Symbol on the "+ option,
     ("1", "2", "3", "4", "5", "6","Other"),

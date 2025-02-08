@@ -1,15 +1,12 @@
 import streamlit as st
 from statistics import mode
 
-progress = 0
-answers = []
-
 def updateProgress():
     # this is where the code for the progress bar goes
-    pass
+    progress = progress + 1
 
 def questionOne():
-    progress = progress + 1
+    updateProgress()
     options = ["I wish I could customize this to fully express my style", 
                 "I wish more people got the clothes they wanted",
                 "I wonder what material this clothing is made of",
@@ -18,6 +15,7 @@ def questionOne():
     answers.append(choice)
 
 def questionTwo():
+    updateProgress()
     progress = progress + 1
     options = ["Adding designs to customize my outfit", 
                 "Picking up trash at the local beach",
@@ -27,6 +25,7 @@ def questionTwo():
     answers.append(choice)
 
 def questionThree():
+    updateProgress()
     progress = progress + 1
     options = ["Vintage Style", 
                 "Practicality",
@@ -45,6 +44,7 @@ def questionFour():
     answers.append(choice)
 
 def questionFive():
+    updateProgress()
     progress = progress + 1
     options = ["It’s no longer my style", 
                 "I’m giving it to a loved one",
@@ -54,6 +54,7 @@ def questionFive():
     answers.append(choice)
 
 def quizResults():
+    updateProgress()
     result = mode(answers)
     #thin image banner goes here eventually
     st.subheader("You are a...")
@@ -76,8 +77,11 @@ def quizResults():
     with col2:
         st.page_link("pages/page_3.py", label="Retry")
 
-#st.image("FemmHacks_2025/Images/clothing_header.jpg")
-st.title("What's Your Style?")
-st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
-st.button("Start Quiz", on_click=questionOne())
+if __name__ == "__main__":
+    progress = 0
+    answers = []
+    #st.image("FemmHacks_2025/Images/clothing_header.jpg")
+    st.title("What's Your Style?")
+    st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
+    st.button("Start Quiz", on_click=questionOne())
 

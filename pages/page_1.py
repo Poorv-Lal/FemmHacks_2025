@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Homepage")
 
-st.divider
+st.divider()
 st.header("Our mission - SPROUT")
 st.subheader("Sustainability")
 st.write("Taking care of the earth in small ways where you can while meeting our individual and communal needs")
@@ -18,8 +18,8 @@ st.subheader("Transitioning ")
 st.write("Taking the small steps gradual steps to change make green habits")
 
 
-st.divider
+st.divider()
 st.header("Why does taking care of the environment matters?")
 
-st.divider
+st.divider()
 st.header("What can you do?")

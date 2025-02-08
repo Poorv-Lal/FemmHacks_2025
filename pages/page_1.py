@@ -3,18 +3,16 @@ import streamlit as st
 # Custom CSS for container styles
 st.markdown("""
     <style>
-        .container-blue {
-            background-color: #add8e6;  /* Light blue */
-            padding: 20px;
-            border-radius: 10px;
+        .streamlit-expanderHeader {
+            background-color: #90ee90;  /* Light green background for the container */
+            padding: 10px;
         }
-        .container-green {
-            background-color: #90ee90;  /* Light green */
-            padding: 20px;
-            border-radius: 10px;
+        .css-1v0mbdj {
+            background-color: #90ee90;  /* Apply the green background color to the container */
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 st.title("Homepage")
 st.divider()

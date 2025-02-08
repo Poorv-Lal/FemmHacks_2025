@@ -20,53 +20,65 @@ Question_1_Answered = st.button("Start Quiz")
 #    progress = progress + 1
 
 if Question_1_Answered == True:
+    choice = "-1"
     progress = progress +1
     options = ["I wish I could customize this to fully express my style", 
                 "I wish more people got the clothes they wanted",
                 "I wonder what material this clothing is made of",
                 "It'd be nice to pass this garment on to my grandchildren"]
-    choice = st.radio("What’s the first thing you think of after buying new clothes?", options, on_change=Question_2_Answered)
+    choice = st.radio("What’s the first thing you think of after buying new clothes?", options)
     answers.append(choice)
+    if(choice != "-1"):
+        Question_2_Answered=True
 
 
 if Question_2_Answered == True:
-    progress = progress +1
+    choice = "-1"
     progress = progress + 1
     options = ["Adding designs to customize my outfit", 
                 "Picking up trash at the local beach",
                 "Volunteering at a shelter for vulnerable people",
                 "Finding valuable items for a collection"]
-    choice = st.radio("How would you like to spend a Saturday afternoon?", options, on_change=Question_3_Answered)
+    choice = st.radio("How would you like to spend a Saturday afternoon?", options)
     answers.append(choice)
+    if(choice != "-1"):
+        Question_3_Answered=True
 
 if Question_3_Answered == True:
-    progress = progress +1
+    choice = "-1"
     progress = progress + 1
     options = ["Vintage Style", 
                 "Practicality",
                 "Comfort",
                 "Durability"]
-    choice = st.radio("What’s the most attractive quality an outfit can have?", options, Question_4_Answered)
+    choice = st.radio("What’s the most attractive quality an outfit can have?", options)
     answers.append(choice)
+    if(choice != "-1"):
+        Question_4_Answered=True
 
 if Question_4_Answered == True:
+    choice = "-1"
     progress = progress +1
     options = ["When someone is afraid to express themselves", 
                 "When someone is afraid to express themselves",
                 "When someone wastes their food",
                 "When someone doesn’t plan for the long run"]
-    choice = st.radio("What’s the first thing you think of after buying new clothes?", options, on_change=Question_5_Answered)
+    choice = st.radio("What’s the first thing you think of after buying new clothes?", options)
     answers.append(choice)
+    if(choice != "-1"):
+        Question_5_Answered=True
 
 if Question_5_Answered == True:
-    progress = progress +1
+    choice = "-1"
     progress = progress + 1
     options = ["It’s no longer my style", 
                 "I’m giving it to a loved one",
                 "I think it’s starting to look old",
                 "It’s too damaged to maintain or repair"]
-    choice = st.radio("Why would you want to get rid of a piece of clothing?", options, on_change=Results)
+    choice = st.radio("Why would you want to get rid of a piece of clothing?", options)
     answers.append(choice)
+    if(choice != "-1"):
+        Results=True
 
 if Results == True:
     uprogress = progress +1

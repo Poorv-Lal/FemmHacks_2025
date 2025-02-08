@@ -6,12 +6,15 @@ import streamlit as st
 # hey!
 def page_1():
     st.title("Homepage")
-    st.write("Ahhhhhhhh")
 
 def page_2():
     st.title("Page 2")
 if __name__ == "__main__":
     pg=st.navigation([st.Page(page_1),st.Page(page_2)])
+
+    if pg == page_1:
+        st.title("Homepage")
+        st.write("Ahhhhhhhh")
     
 
 

@@ -24,10 +24,10 @@ with col5:
 
 
 
-
+st.divider()
 
 with st.container(border=True):
-    
+
     st.header("Our mission - SPROUT")
     st.subheader("Sustainability")
     st.write("Taking care of the earth in small ways where you can while meeting our individual and communal needs")

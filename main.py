@@ -6,6 +6,7 @@ import streamlit as st
 # hey!
 def page_1():
     st.title("Homepage")
+    st.write("Ahhhhhhhh")
 
 def page_2():
     st.title("Page 2")

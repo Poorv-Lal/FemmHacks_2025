@@ -4,30 +4,30 @@ from collections import Counter
 # Define quiz questions, options, and category mapping
 quiz_data = [
     {
-        "question": "What's your ideal vacation?",
+        "question": "What’s the first thing you think of after buying new clothes?",
         "options": {
-            "🏖️ Beach paradise": "Relaxed",
-            "🏔️ Mountain adventure": "Adventurous",
-            "🏙️ City exploration": "Curious",
-            "🏡 Staycation at home": "Cozy"
+            "I wish I could customize this to fully express my style": "Thrifting",
+            "I wish more people got the clothes they wanted": "Donating",
+            "I wonder what material this clothing is made of": "Recycling",
+            "It’d be nice to pass this garment on to my grandchildren": "Slow fashion"
         }
     },
     {
-        "question": "What's your go-to drink?",
+        "question": "How would you like to spend a Saturday afternoon?",
         "options": {
-            "☕ Coffee": "Cozy",
-            "🍹 Smoothie": "Relaxed",
-            "🥤 Soda": "Adventurous",
-            "🍵 Green tea": "Curious"
+            "Finding valuable items for a collection": "Slow fashion",
+            " Picking up trash at the local beach": "Recycling",
+            " Volunteering at a shelter for vulnerable people": "Donating",
+            "Adding designs to customize my outfit": "Thrifting"
         }
     },
     {
-        "question": "Pick a pet!",
+        "question": "What’s the most attractive quality an outfit can have?",
         "options": {
-            "🐶 Dog": "Adventurous",
-            "🐱 Cat": "Cozy",
-            "🦜 Parrot": "Curious",
-            "🐢 Turtle": "Relaxed"
+            "Practicality": "Donating",
+            "Durability": "Slow fashion",
+            "Vintage Style": "Thrifting",
+            "Comfort": "Recycling"
         }
     },
     {

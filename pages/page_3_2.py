@@ -31,10 +31,10 @@ quiz_data = [
         }
     },
     {
-        "question": "What's your favorite type of movie?",
+        "question": "What’s a personal ick that you have?",
         "options": {
             "🎭 Drama": "Curious",
-            "😂 Comedy": "Relaxed",
+            "😂 Comedy": "Thrifting",
             "🎬 Action": "Adventurous",
             "🎀 Romance": "Cozy"
         }

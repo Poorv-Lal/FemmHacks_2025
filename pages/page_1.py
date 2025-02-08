@@ -1,6 +1,30 @@
 import streamlit as st
 
 st.title("Homepage")
+st.divider()
+
+col1,col2,col3,col4,col5 = st.columns(5)
+
+with col1:
+    if st.button("Recycling") :
+        st.session_state.page = "page\page2.py"
+
+with col2:
+    st.button("Clothing")
+
+
+with col3:
+    st.button("Composting")
+    
+with col4:
+    st.button("Microplastics Avoiding")
+
+with col5:
+    st.button("Call to Action")
+
+
+
+
 
 st.divider()
 st.header("Our mission - SPROUT")

@@ -4,17 +4,26 @@ import streamlit as st
 
 # HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 # hey!
-def page_1():
-    st.title("Homepage")
 
-def page_2():
-    st.title("Page 2")
 if __name__ == "__main__":
-    pg=st.navigation([st.Page(page_1),st.Page(page_2)])
+    # Sidebar navigation
+    st.sidebar.title("Navigation")
+    page = st.sidebar.selectbox("Go to", ["Home", "Page 1", "Page 2"])
 
-    if pg == page_1:
-        st.title("Homepage")
-        st.write("Ahhhhhhhh")
+    # Home page content
+    if page == "Home":
+        st.title("Home Page")
+        st.write("Ahhhhhh")  # Display "Ahhhhhh" on the Home page
+
+    # Page 1 content
+    elif page == "Page 1":
+        st.title("Page 1: About Us")
+        st.write("This is the first additional page.")
+
+    # Page 2 content
+    elif page == "Page 2":
+        st.title("Page 2: Contact")
+        st.write("This is the second additional page.")
     
 
 

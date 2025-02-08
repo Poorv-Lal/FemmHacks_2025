@@ -42,6 +42,13 @@ with col5:
 
 
 st.divider()
+with st.container():
+    st.markdown('<div class="container-green">', unsafe_allow_html=True)
+    st.write("This is a green container.")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+st.divider()
+
 with st.container(border=True):
     st.markdown('<div class="container-green">', unsafe_allow_html=True)
 

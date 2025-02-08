@@ -1,5 +1,21 @@
 import streamlit as st
 
+# Custom CSS for container styles
+st.markdown("""
+    <style>
+        .container-blue {
+            background-color: #add8e6;  /* Light blue */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .container-green {
+            background-color: #90ee90;  /* Light green */
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 st.title("Homepage")
 st.divider()
 
@@ -27,6 +43,8 @@ with col5:
 
 st.divider()
 with st.container(border=True):
+    st.markdown('<div class="container-green">', unsafe_allow_html=True)
+
     st.header("Our mission - SPROUT")
     st.subheader("Sustainability")
     st.write("Taking care of the earth in small ways where you can while meeting our individual and communal needs")
@@ -40,6 +58,8 @@ with st.container(border=True):
     st.write("Knowing where we can individually help out on smaller scales vs. taking collective action")
     st.subheader("Transitioning ")
     st.write("Taking the small steps gradual steps to change make green habits")
+    
+    st.markdown('</div>', unsafe_allow_html=True)
 
 
 st.divider()

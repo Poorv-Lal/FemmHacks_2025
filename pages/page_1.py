@@ -6,7 +6,7 @@ st.divider()
 col1,col2,col3,col4,col5 = st.columns(5)
 
 with col1:
-    st.page_link("pages/page_1.py", label="Home", icon="🏠")
+    st.page_link("pages/page_2.py", label="Home", icon="🏠")
 
 with col2:
     st.button("Clothing")

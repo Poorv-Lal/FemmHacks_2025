@@ -4,9 +4,11 @@ import streamlit as st
 
 # HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 # hey!
+def page_1():
+    st.title("Homepage")
 if __name__ == "__main__":
-    st.write("Hello World!")
-    st.write("Heyyyyyyyyyyyyyy!")
+    pg=st.navigation([st.Page(page_1)])
+    
 
 
 

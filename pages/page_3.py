@@ -79,8 +79,7 @@ if Question_5_Answered == True:
                 "It’s too damaged to maintain or repair"]
     choice = st.radio("Why would you want to get rid of a piece of clothing?", options)
     answers.append(choice)
-    if (choice!="-1"):
-        Results = True
+    
 
 if Results == True:
     uprogress = progress +1

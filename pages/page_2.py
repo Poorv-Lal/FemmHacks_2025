@@ -122,14 +122,13 @@ elif option == "Carton":
     ("Clean & Dry","Wet", "Dirty"),
     )
     if option2 == "Clean & Dry":
-        can_recycle = -1
-        message = "Clean it and you are good to go"
+        can_recycle = 1
     elif option2 == "Wet":
         can_recycle = -1
         message = "Dry it and you are good to go"
-    elif option2 == "Shredded/In-small Pieces":
+    elif option2 == "Diry":
         can_recycle = 1
-        message = "because it is not normally recyclable, but local recycling plants near you may be able to handle or repurpose them"
+        message = "Clean it and you are good to go"
 
 
 elif option == "Food Scraps":

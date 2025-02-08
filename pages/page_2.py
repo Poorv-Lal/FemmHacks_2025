@@ -149,7 +149,7 @@ if can_recycle == 1:
     st.success("♻️ You can Recycle this!!!")
 elif can_recycle == -1:
     st.error("🤔 You might be able to Recycle this...")
+    st.written(message)
 elif can_recycle == 0:
     st.error("❌ You can NOT Recycled this...")
-
-st.written(message)
+    st.written(message)

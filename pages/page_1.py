@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.title("Homepage")
+st.title("How to be a Sprout")
 st.divider()
 
 col1,col2,col3,col4,col5 = st.columns(5)

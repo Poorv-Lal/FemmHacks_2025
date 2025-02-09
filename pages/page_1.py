@@ -11,7 +11,7 @@ with col1:
     st.page_link("pages/page_2.py", label="Recycling", icon="♻️")
 
 with col2:
-     st.page_link("pages/page_3_2.py", label="Clothing", icon="👚")
+     st.page_link("pages/page_3.py", label="Clothing", icon="👚")
 
 
 with col3:

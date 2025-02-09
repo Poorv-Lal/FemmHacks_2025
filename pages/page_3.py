@@ -1,7 +1,7 @@
 import streamlit as st
 from collections import Counter
 
-st.image("Images/clothing_header.jpg")
+#st.image("Images/clothing_header.jpg")
 st.title("Clothing")
 
 

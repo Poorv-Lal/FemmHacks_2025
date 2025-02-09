@@ -1,7 +1,8 @@
 import streamlit as st
 
 
-st.title("How to be a Sprout")
+#st.title("How to be a Sprout")
+st.markdown("<h1 style='color: #467444;'>How to be a Sprout</h1>", unsafe_allow_html=True)
 st.divider()
 
 col1,col2,col3,col4,col5 = st.columns(5)

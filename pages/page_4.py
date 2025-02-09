@@ -24,7 +24,7 @@ with st.container(border=True):
 
 with st.container(border=True):
     st.header("What you CAN Compost")
-    st.write("- Fruit and vegetable peels and scraps\n- Rotten fruit and veggies\n -Houseplant trimmings\n- Coffee grounds and paper filters\n- Tea leaves\n- Eggshells\n- Nutshells (apart from walnuts)\n- Hair and fur\n -Paper, cardboard, and shredded newspaper\n- Napkins, paper towels, and unused toilet paper\n- Grass clippings\n- Leaves\n- Flowers\n- Sawdust\n- wood chips")
+    st.write("- Fruit and vegetable peels and scraps\n- Rotten fruit and veggies\n- Houseplant trimmings\n- Coffee grounds and paper filters\n- Tea leaves\n- Eggshells\n- Nutshells (apart from walnuts)\n- Hair and fur\n -Paper, cardboard, and shredded newspaper\n- Napkins, paper towels, and unused toilet paper\n- Grass clippings\n- Leaves\n- Flowers\n- Sawdust\n- wood chips")
 
 
 with st.container(border=True):

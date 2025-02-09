@@ -55,10 +55,10 @@ quiz_data = [
 
 # Personality categories and results
 results = {
-    "Thrifting": "Thrifting Answer",
-    "Donating": "Donating Answer",
-    "Recycling": "Recycling Answer",
-    "Slow fashion": "Slow fashion Answer"
+    "Vintage Thrifter": "You would defintely love finding lovely styles from local vintage stores. Thrifting is budget friendly, and great for people who love to customize clothing with fiber arts. If you ever change your fashion aesthetic, local thrift stores are always ready to purchase and repurpose your clothes for cash.",
+    "Heartfelt Donor": "You would definetly love giving old clothes to those in need. Lots of vulnerable community members are looking for clothes to keep them warm or protect their skin. If you ever feel like downscaling your wardrobe, don't forget about local donation centers that are ready to use your clothes to save lives.",
+    "Fabric Connoisseur": "You would definetly love purchasing clothes made from recyclable material. Your good eye for fabric combined with your need for comfort can be satisfied by local clothing stores that sell trousers, shirts, and more made from biodegradable material.",
+    "Slow Fashionista": "You would definetly love getting clothes from stores who tailor outfits that last for generations. Instead of purchasing clothes that are made to get old quickly, I suggest shopping at stores for trousers with solid denim material, and shirts that use organic dyes. There'll be no more need to throw away clothes."
 }
 
 # Initialize session state
@@ -86,7 +86,7 @@ if st.session_state.question_index < len(quiz_data):
 
 # Show final result when quiz is complete
 else:
-    st.write("## 🎉 Your Personality Result:")
+    st.subheader("You are a...")
     
     # Count the most frequent category
     personality_type = Counter(st.session_state.answers).most_common(1)[0][0]

@@ -1,6 +1,9 @@
 import streamlit as st
 from collections import Counter
 
+st.title("Clothing")
+
+
 # Define quiz questions, options, and category mapping
 quiz_data = [
     {

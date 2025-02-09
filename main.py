@@ -1,4 +1,4 @@
-#Name: Ada Anya, Abbey Ham, Poorv Lal
+#Name: Ada A., Abbey H., Poorv L.
 
 import streamlit as st 
 

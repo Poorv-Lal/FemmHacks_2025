@@ -30,7 +30,7 @@ st.divider()
 with st.container(border=True):
 
     #st.header("Our mission - SPROUT")
-    st.markdown("<h2 style='color: #467444;'>How to be a Sprout</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color: #587056;'>Our mission - SPROUT</h2>", unsafe_allow_html=True)
     st.subheader("Sustainability")
     st.write("Taking care of the earth in small ways where you can while meeting our individual and communal needs")
     st.subheader("Preservation")

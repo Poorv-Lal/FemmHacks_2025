@@ -1,3 +1,5 @@
+# Note This is an outdated file 
+'''
 import streamlit as st
 from statistics import mode
 
@@ -110,3 +112,4 @@ if answers.__len__ == 5:
 #st.subheader("Take this quiz to know what fashion sustainability practice suits you!")
 #st.button("Start Quiz", on_click=questionOne())
 
+'''

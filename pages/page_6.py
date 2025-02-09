@@ -7,7 +7,7 @@ st.subheader("Lots of organizations are working towards a healthier environment 
 # recycling
 st.divider()
 with st.container(border=True):
-    st.subheader("Recycling Organizations and Practices")
+    st.markdown("<h2 style='color: #587056;'>Recycling</h2>", unsafe_allow_html=True)
     # info about recycling organizations and what to do goes here, and hyperlinks to companies
     st.write("Recycling on your own is important, but there's lots of fun when working with communities to reuse and sort disposables. You can get involved with some of these organizations.")
     col1, col2, col3 = st.columns(3)
@@ -27,7 +27,7 @@ with st.container(border=True):
 # clothing
 st.divider()
 with st.container(border=True):
-    st.header("Sustainable Fashion")
+    st.markdown("<h2 style='color: #587056;'>Clothing</h2>", unsafe_allow_html=True)
     st.write("Cheaper clothes that don't last long are made in an industry process called \"fast fashion.\" This process was designed to keep up with the trends, but research has shown these practices damage the environment with non-biodegradable clothes. If you want to buy clothes that last longer, or are second-hand, check out these organizations. ")
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -42,7 +42,7 @@ with st.container(border=True):
 # composting
 st.divider()
 with st.container(border=True):
-    st.header("Composting")
+    st.markdown("<h2 style='color: #587056;'>Composting</h2>", unsafe_allow_html=True)
     st.write("Composting is great if you have the resources to do so. If you don't have the space or time to compost, there are community gardens in Philadelphia that would happily take your green or brown matter.")
     col1, col2, col3 = st.columns(3)
     with col1:
@@ -57,7 +57,7 @@ with st.container(border=True):
 # microplastics
 st.divider()
 with st.container(border=True):
-    st.header("Microplastics")
+    st.markdown("<h2 style='color: #587056;'>Microplastics</h2>", unsafe_allow_html=True)
     st.write("Microplastics are almost impossible to avoid in everyday life. Furthermore, they are super harmful to everything they come in contact with. It's important to join groups in Philadelphia focused on changing food production legislation to protect future geenrations.")
     col1, col2, col3 = st.columns(3)
     with col1:

@@ -7,7 +7,8 @@ can_recycle = 0
 message = ""
 
 
-st.header("Want to know if you can recycle something?")
+#st.header("Want to know if you can recycle something?")
+st.markdown("<h2 style='color: #587056;'>Want to know if you can recycle something?</h2>", unsafe_allow_html=True)
 option = st.selectbox(
     "What kind of Material do you have?",
     ("Batteries/Electronics", "Cardboard","Carton", "Paper","Food Scraps", "Glass","Plastic","Metal", "Styrofoam","Other/Unsure"),

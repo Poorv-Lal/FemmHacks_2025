@@ -1,6 +1,5 @@
 import streamlit as st
-from collections import Counter
-
+from collections import Counter 
 st.markdown("<h1 style='color: #467444;'>Clothing</h1>", unsafe_allow_html=True)
 # Define quiz questions, options, and category mapping
 quiz_data = [

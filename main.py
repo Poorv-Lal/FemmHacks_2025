@@ -1,6 +1,6 @@
 #Name: Ada Anya, Abbey Ham, Poorv Lal
 
-import streamlit as st
+import streamlit as st 
 
 pg = st.navigation([st.Page("pages/page_1.py",title="Homepage"),
                      st.Page("pages/page_2.py",title="Recycling"),

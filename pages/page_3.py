@@ -1,7 +1,6 @@
 import streamlit as st
 from collections import Counter
 
-#st.image("Images/clothing_header.jpg")
 st.title("Clothing")
 
 
@@ -87,7 +86,7 @@ if st.session_state.question_index < len(quiz_data):
 
 # Show final result when quiz is complete
 else:
-    st.subheader("You are a...")
+    st.write("## 🎉 Your Personality Result:")
     
     # Count the most frequent category
     personality_type = Counter(st.session_state.answers).most_common(1)[0][0]

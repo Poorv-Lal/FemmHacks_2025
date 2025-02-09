@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.title("Microplastics")
+#st.title("Microplastics")
+st.markdown("<h1 style='color: #467444;'>Microplastics</h1>", unsafe_allow_html=True)
 
 with st.container(border=True):
     st.header("What are microplastics?")

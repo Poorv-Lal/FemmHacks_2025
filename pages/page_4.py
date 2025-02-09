@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.title("Composting")
+#st.title("Composting")
+st.markdown("<h1 style='color: #467444;'>Composting</h1>", unsafe_allow_html=True)
 
 with st.container(border=True):
     st.header("What is Composting?")
@@ -14,7 +15,7 @@ with st.container(border=True):
 
 with st.container(border=True):
     st.header("How to Compost?")
-    st.write("1)Pick a compost bin that works for you\n 2)Choose a sunny and flat spot for your bin to live\n 3)Alternate between layers of green and brown material (see below in tips what this means)\n 4)Lightly Wet the Compost when it is dry\n 5)Turn/Move around the compost once a week\n 6)Repeat steps 4-5 for about 3-4motnhs until the compost looks dark, crumbly, and smells like dirt")
+    st.write("1)Pick a compost bin that works for you \n 2)Choose a sunny and flat spot for your bin to live \n 3)Alternate between layers of green and brown material (see below in tips what this means) \n 4)Lightly Wet the Compost when it is dry \n 5)Turn/Move around the compost once a week \n 6)Repeat steps 4-5 for about 3-4motnhs until the compost looks dark, crumbly, and smells like dirt")
 
 
 with st.container(border=True):

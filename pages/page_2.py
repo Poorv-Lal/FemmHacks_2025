@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.title("Recycling")
+#st.title("Recycling")
+st.markdown("<h1 style='color: #467444;'>Recycling</h1>", unsafe_allow_html=True)
 
 can_recycle = 0
 message = ""

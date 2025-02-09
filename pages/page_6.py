@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.title("Call to Action")
+#st.title("Call to Action")
+st.markdown("<h1 style='color: #467444;'>Call to Action</h1>", unsafe_allow_html=True)
 st.subheader("Lots of organizations are working towards a healthier environment for the future. Here's how you can help.")
 
 # recycling
@@ -36,7 +37,7 @@ with st.container(border=True):
     with col3:
         st.page_link("https://www.heres2coolstuff.com/recycled", label="Here2Cool")
     st.write("If you'd like to know more sustainable fashion practices, check out our clothing page.")
-    st.page_link("pages/page_3_2.py", label="Clothing", icon="👚")
+    st.page_link("pages/page_3.py", label="Clothing", icon="👚")
 
 # composting
 st.divider()
